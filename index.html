@@ -11,43 +11,40 @@
 <body>
     <!-- Top Bar -->
     <div class='top-bar'>
-        <a href="tel:+123456789">Call us at 1 (800) HTML - CSS</a>
-        <!-- ZARAZ USUN --><!-- ZARAZ USUN --><!-- ZARAZ USUN -->
-        <p class="zaraz-usun">asd</p>
-        <!-- ZARAZ USUN --><!-- ZARAZ USUN --><!-- ZARAZ USUN -->
+        <a href="">Call us at 1 (800) HTML - CSS</a>
     </div>
 
     <!-- Navigation -->
-    <div class="nav-bar">
+    <div id="Home" class="nav-bar">
         <a class="nav-image" href="index.html"><img src="img/logo.png" alt="newbie-logo" title="Logo"></a>
         <button class="nav-btn">
             <i class="fas fa-bars"></i>
         </button>
         <nav class="nav-container">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Projects</a>
-            <a href="">Contact Us</a>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact Us</a>
         </nav>
     </div>
     <nav class="nav-container-btn">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Services</a>
-        <a href="">Projects</a>
-        <a href="">Contact Us</a>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Services">Services</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Contact">Contact Us</a>
     </nav>
 
     <!-- Images Carousel -->
-    <div class="casel-container">
+    <div id="About" class="casel-container">
         <div class="casel-slide">
             <div class="casel-img-container last-clone">
                 <img src="./img/carousel/3.jpg" alt="Office photo">
                 <div class="casel-text-3">
                     <h2>BUILT FOR TABLETS</h2>
                     <h3>THE BEST WEBSITES CAN BE SEEN JUST AS WELL ON ALL DEVICES</h3>
-                    <button class="blue-btn">SEE TABLET</button>
+                    <button class="r-b-btn blue-btn">SEE TABLET</button>
                 </div>
             </div>
             <div class="casel-img-container">
@@ -56,15 +53,15 @@
                     <h1>BOOTSTRAP</h1>
                     <hr>
                     <h2>COMPLETE WEBSITE DESIGN</h2>
-                    <button class="red-btn">VIEW DEMO</button>
-                    <button class="blue-btn">START NOW</button>
+                    <button class="r-b-btn red-btn">VIEW DEMO</button>
+                    <button class="r-b-btn blue-btn">START NOW</button>
                 </div>
             </div>
             <div class="casel-img-container">
                 <img src="./img/carousel/2.jpg" alt="Office photo">
                 <div class="casel-text-2">
                     <h3>A MOBILE FRIENDLY HTML & CSS WEBSITE DESIGN</h3>
-                    <button class="red-btn">SEE PHONE</button>
+                    <button class="r-b-btn red-btn">SEE PHONE</button>
                 </div>
             </div>
             <div class="casel-img-container">
@@ -72,7 +69,7 @@
                 <div class="casel-text-3">
                     <h2>BUILT FOR TABLETS</h2>
                     <h3>THE BEST WEBSITES CAN BE SEEN JUST AS WELL ON ALL DEVICES</h3>
-                    <button class="blue-btn">SEE TABLET</button>
+                    <button class="r-b-btn blue-btn">SEE TABLET</button>
                 </div>
             </div>
             <div class="casel-img-container first-clone">
@@ -81,8 +78,8 @@
                     <h1>BOOTSTRAP</h1>
                     <hr>
                     <h2>COMPLETE WEBSITE DESIGN</h2>
-                    <button class="red-btn">VIEW DEMO</button>
-                    <button class="blue-btn">START NOW</button>
+                    <button class="r-b-btn red-btn">VIEW DEMO</button>
+                    <button class="r-b-btn blue-btn">START NOW</button>
                 </div>
             </div>
         </div>
@@ -99,7 +96,7 @@
     </header>
 
     <!-- Three Column Section -->
-    <section class="three-column-section-container">
+    <section id="Services" class="three-column-section-container">
         <div>
             <img src="./img/1.jpg" alt="Feature Image">
             <h4>"Amazing. Incredible."</h4>
@@ -119,41 +116,66 @@
             <button>Our Story</button>
         </div>
     </section>
-
 
     <!-- Fixed Background & Emoji -->
-    <section class="fixed-background-container">
+    <!-- Fixed Background -->
+    <section id="Projects" class="fix-background-and-emoji-container">
+        <a href="javascript:void(0)" class="emoji emoji-top"></a>
+        <div class="fixed-background-container">
+            <div>
+                <h2>Advance to the Next Level</h2>
+                <h4>...see what's on the other side.</h4>
+                <button class="r-b-btn blue-btn">BLUE PILL</button>
+                <button class="r-b-btn red-btn">RED PILL</button>
+            </div>
+        </div>
+        <!-- Emoji collapse -->
+        <a href="javascript:void(0)" class="emoji emoji-bottom"><i class="fas fa-plug"></i></a>
+        <div class="emoji-collapse">
+            <div class="emoji-collapse-inner">
+                <img src="./img/emoji/rabbit.gif" alt="rabbit emoji">
+                <img src="./img/emoji/panda.gif" alt="panda emoji">
+                <img src="./img/emoji/alien.gif" alt="alien emoji">
+                <img src="./img/emoji/chicken.gif" alt="chicken emoji">
+            </div>
+        </div>
+        
+    </section>
+        <!-- Emoji popup -->
+    <img class="popup-emoji" src="./img/emoji/dragon.gif" alt="dragon emoji">
+    <div class="popup-background"></div>
 
+    <!-- Two Column Section -->
+    <section class="two-column-section-container">
+        <div>
+            <h1>We've been expecting you</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure sit velit assumenda earum similique dignissimos dolorum odit praesentium </p>
+            <a>THE AGENCY THEME</a>
+        </div>
+        <img src="./img/code.jpg" alt="Coding image">
     </section>
 
-
-
-
-
-
-
-    <section class="three-column-section-container">
-        <div>
-            <img src="./img/1.jpg" alt="Feature Image">
-            <h4>"Amazing. Incredible."</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quos omnis, quaerat earum odio.</p>
-            <button>Our Story</button>
-        </div>
-        <div>
-            <img src="./img/2.jpg" alt="Feature Image">
-            <h4>"Amazing. Incredible."</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quos omnis, quaerat earum odio.</p>
-            <button>Our Story</button>
-        </div>
-        <div>
-            <img src="./img/3.jpg" alt="Feature Image">
-            <h4>"Amazing. Incredible."</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quos omnis, quaerat earum odio.</p>
-            <button>Our Story</button>
-        </div>
+    <!-- Jumbotron Section -->
+    <section id="Contact" class="jumbotron-section-container">
+        <h2>Looking for quality web development and design services?</h2>
+        <a href="">CONTACT US TODAY</a>
     </section>
 
-
+    <!-- Footer -->
+    <footer>
+        <img src="./img/logo-white.png" alt="white logo" title="Logo">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi magni quos ratione sunt rem placeat minus natus ex iste totam, earum cupiditate amet exercitationem quaerat quisquam qui. Quam, enim rem.</p>
+        <ul>
+            <li><a href="#Contact"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#Contact"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#Contact"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#Contact"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </footer>
+    <!-- Socket -->
+    <div class="socket">
+        <a href="#Contact">@loremmedia.com</a>
+    </div>
 
 
     <script src="https://kit.fontawesome.com/5c9adc9644.js" crossorigin="anonymous"></script>

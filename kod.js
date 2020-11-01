@@ -3,11 +3,11 @@
 const navLinks = document.querySelector(".nav-container-btn")
 const navButton = document.querySelector(".nav-btn")
 const navButtonFont = document.querySelector(".nav-btn i")
-const toggleNavButton = () =>{
+
+navButton.addEventListener('click', () =>{
     navLinks.classList.toggle('toggle-nav-container-btn')
     navButtonFont.classList.toggle('toggle-nav-btn')
-}
-navButton.addEventListener('click', toggleNavButton)
+})
 navButton.addEventListener('blur', ()=>{
     navLinks.classList.remove('toggle-nav-container-btn')
     navButtonFont.classList.remove('toggle-nav-btn')
@@ -64,15 +64,44 @@ setInterval(caselNext, 990000)
 
 
 
+// ======== Emoji collapse ========
+    const emojiPlugTop = document.querySelector('.emoji-top')
+    const emojiPlugBottom = document.querySelector('.emoji-bottom')
+    const emojiCollapse = document.querySelector('.emoji-collapse')
+    const emojiCollapseInner = document.querySelector('.emoji-collapse-inner')
+    const emojiPlugOpen = () =>{
+        const eciHeight = emojiCollapseInner.offsetHeight
+        emojiCollapse.style.height === `${eciHeight}px`? emojiCollapse.style.height = "0rem" : emojiCollapse.style.height = `${eciHeight}px`
+    }
+    const emojiPlugClose = () =>{
+        emojiCollapse.style.height = 0
+    }
+    emojiPlugTop.addEventListener('click', emojiPlugOpen)
+    emojiPlugTop.addEventListener('blur', emojiPlugClose)
+    emojiPlugBottom.addEventListener('click', emojiPlugOpen)
+    emojiPlugBottom.addEventListener('blur', emojiPlugClose)
+// ======== Emoji popup ========
+    const emojiPopup = document.querySelector('.popup-emoji')
+    const popupButtonBlue = document.querySelector('.fixed-background-container .blue-btn')
+    const popupButtonRed = document.querySelector('.fixed-background-container .red-btn')
+    const popupBackground = document.querySelector('.popup-background')
 
+    const emojiPopupOpen = ()=>{
+        emojiPopup.style.visibility = "visible"
+        emojiPopup.style.opacity = "1"
+        emojiPopup.style.transform = "translate(-50%, 2rem)"
+        popupBackground.style.visibility = "visible"
+        popupBackground.style.opacity = ".6"
+    }
+    const emojiPopupClose = ()=>{
+        emojiPopup.style.visibility = "hidden"
+        emojiPopup.style.opacity = "0"
+        emojiPopup.style.transform = "translate(-50%, 0)"
+        popupBackground.style.visibility = "hidden"
+        popupBackground.style.opacity = "0"
+    }
+    popupButtonBlue.addEventListener('click', emojiPopupOpen)
+    popupButtonBlue.addEventListener('blur', emojiPopupClose)
+    popupButtonRed.addEventListener('click', emojiPopupOpen)
+    popupButtonRed.addEventListener('blur', emojiPopupClose)
 
-
-
-
-
-
-// zaraz usun
-const zaraUsun = document.querySelector('.zaraz-usun')
-window.addEventListener('click', ()=>{
-    zaraUsun.textContent = counter
-})
