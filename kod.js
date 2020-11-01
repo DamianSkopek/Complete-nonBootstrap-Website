@@ -60,7 +60,7 @@ window.addEventListener('resize', ()=>{
     caselSize = caselImages[0].clientWidth
     caselSlide.style.transform = `translateX(${-caselSize*counter}px)`
 })
-setInterval(caselNext, 990000)
+setInterval(caselNext, 7000)
 
 
 

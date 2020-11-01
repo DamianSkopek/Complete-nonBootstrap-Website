@@ -455,6 +455,9 @@ footer li a{
     padding: 0 1rem 0 1rem;
     font-size: 2.5rem;
 }
+footer i{
+    color: #fff;
+}
 .fa-facebook:hover{
     color: #3B5998;
 }
@@ -476,6 +479,9 @@ footer li a{
     text-align: center;
     border-top: 1px solid #4981b3;
     padding: 2rem;
+}
+.socket a{
+    color: #fff;
 }
 
 
